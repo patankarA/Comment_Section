@@ -3,15 +3,25 @@ import InputComment from './components/InputComment'
 import DisplayComment from './components/DisplayComment';
 
 function App() {
-  const [cdata, setCdata] = useState([]);
+  const [cdata, setCdata] = useState(() => {
+    // Load stored comments from localStorage when component first mounts
+    const savedComments = localStorage.getItem("comments");
+    return savedComments ? JSON.parse(savedComments) : []; 
+  });
 
   const inputRef = useRef(null);
+
+  // Save comments to local storage whenever cdata changes
+  useEffect(()=>{
+    localStorage.setItem("comments", JSON.stringify(cdata));
+  }, [cdata])
 
   useEffect(()=>{
     if(inputRef.current) {
       inputRef.current.focus();
     }
   }, [])
+
 
   // console.log(cdata);
  
