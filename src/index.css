@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.comment_Container {
+  margin: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-input{
+  padding: 5px;
+  width: 80%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom:0.5px solid black;
+  outline: none;
+  
+}
+
+.display_Comment_box {
+  background-color: rgb(220, 233, 233);
+  padding: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.display_Comment {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  width: 15%;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.display-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.inputContainer-input{
+  margin-left: 30px;
+  padding: 5px;
+  width: 85%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom:0.5px solid black;
+  outline: none;
+  background-color: rgb(220, 233, 233);
+}
+
+.input_Container {
+  display: flex;
+  gap: 5px;
+
+}
+
+.display-relies {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+span{
+  cursor: pointer;
+}
